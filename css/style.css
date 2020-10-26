@@ -282,6 +282,10 @@ a {
   font-size: 0.75rem;
 }
 
+.carousel-size {
+  width: 255px;
+}
+
 /**MEDIAQUERIES**/
 @media only screen and (min-width: 300px) and (max-width: 590px) {
   .contenido-header .imagen-principal {

@@ -257,7 +257,9 @@ a {
 .card-text {
   font-size: $Card-text-font-size;
 }
-
+.carousel-size{
+  width: 255px;
+}
 /**MEDIAQUERIES**/
 
 @media only screen and (min-width: 300px) and (max-width: 590px) {
