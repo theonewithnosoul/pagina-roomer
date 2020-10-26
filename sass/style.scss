@@ -143,13 +143,13 @@ a {
   margin-top: $margin-top-dos;
   @include text-align-center;
   .imagen-encuentra {
-    padding: $imagen-encuentra-padding;
+    
     &:hover {
       @include tranform-scale;
     }
   }
   .imagen-publica {
-    padding: $imagen-publica-padding;
+    
     &:hover {
       @include tranform-scale;
     }
@@ -178,6 +178,7 @@ a {
 .carousel-inner > .item > img {
   width: $carousel-width;
 }
+
 .carousel {
   margin: $margin-cero-auto;
 }
@@ -210,25 +211,8 @@ a {
 
 .indigo {
   background-color: $background-color;
-  .imagen-celular {
-    width: 10rem;
-    position: absolute;
-    left: 41rem;
-    margin-top: 4rem;
-  }
-  .imagen-download {
-    width: 10rem;
-    position: absolute;
-    left: 54rem;
-    margin-top: 4rem;
-  }
 }
 
-.descarga h3 {
-  position: absolute;
-  left: 45rem;
-  margin-top: 1rem;
-}
 .margen {
   margin-top: $margin-top-cinco;
 }
@@ -249,69 +233,76 @@ a {
 }
 
 /**BUSQUEDA**/
-.carousel, .carousel-inner > .item > img{
+.carousel-imagen {
   width: 255px !important;
 }
-.row-2{
+.row-2 {
   width: $row-cards;
   margin-top: $margin-top-dos;
 }
 
-.container-dos{
+.container-dos {
   margin-right: 191px;
 }
-.mapa{
-  position: absolute;
+.mapa {
+  position: fixed;
   top: 10rem;
   right: 1rem;
   width: 692px;
-  height: 49 rem;
+  height: 28rem;
 }
-.card-title{
+.card-title {
   font-size: $h5-font-size;
 }
-.card-text{
+.card-text {
   font-size: $Card-text-font-size;
 }
 
 /**MEDIAQUERIES**/
 
-@media only screen and (max-width: 590px) {
-  .imagen-principal {
-    width: 19rem;
+@media only screen and (min-width: 300px) and (max-width: 590px) {
+  .contenido-header {
+    .imagen-principal {
+      width: $imagen-principal-responsive-xs;
+      text-align: center;
+    }
   }
+
   .contenido-header {
     flex-wrap: wrap;
   }
   .contenido-principal {
     flex-wrap: wrap;
+    margin: $margin-cero-auto;
+    .imagen-publica-1 {
+      padding: 0;
+      width: 15rem;
+    }
+    .imagen-encuentra-1 {
+      padding: 0;
+      width: 15rem;
+    }
   }
-  .imagen-encuentra {
-    padding: 0;
-    width: 19rem;
-  }
-  .imagen-publica {
-    padding: 0;
-    width: 19rem;
-  }
-  .imagen-publica-1 {
-    width: 19rem;
-  }
-  .imagen-encuentra-1 {
-    width: 19rem;
-  }
+
   .nosotros {
     flex-wrap: wrap;
     justify-content: center;
+    margin: $margin-cero-auto;
   }
   .nosotros img {
-    margin-left: 4rem;
+    margin: auto;
+    display: block;
+    
   }
   .list-unstyled {
     flex-wrap: wrap;
   }
   .enlace-arriba {
     bottom: 12rem;
+  }
+
+  .mapa {
+    display: none;
   }
 }
 @media only screen and (min-width: 591px) and (max-width: 767px) {
@@ -323,23 +314,19 @@ a {
     justify-content: center;
     text-align: center;
   }
-  .imagen-encuentra {
-    padding: 0;
-    width: 19rem;
-  }
-  .imagen-publica {
-    padding: 0;
-    width: 19rem;
-  }
-  .imagen-publica-1 {
-    width: 19rem;
-  }
-  .imagen-encuentra-1 {
-    width: 19rem;
-  }
   .contenido-principal {
     text-align: center;
+
+    .imagen-publica-1 {
+      padding: 0;
+      width: 15rem;
+    }
+    .imagen-encuentra-1 {
+      padding: 0;
+      width: 15rem;
+    }
   }
+
   .nosotros img {
     width: 169px;
     margin-left: 10px;
@@ -350,34 +337,27 @@ a {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  .imagen-principal {
-    width: 24rem;
+  .contenido-header {
+    .imagen-principal {
+      width: 22rem;
+    }
   }
   .contenido-principal {
     text-align: center;
-  }
-  .imagen-encuentra {
-    padding: 0;
-    width: 19rem;
-  }
-  .imagen-publica {
-    padding: 0;
-    width: 19rem;
-  }
-  .imagen-publica-1 {
-    width: 19rem;
-  }
-  .imagen-encuentra-1 {
-    width: 19rem;
+
+    .imagen-publica-1 {
+      padding: 0;
+      width: 19rem;
+    }
+    .imagen-encuentra-1 {
+      padding: 0;
+      width: 19rem;
+    }
   }
   .nosotros img {
     width: 169px;
   }
-  .descarga {
-    position: absolute;
-    left: -26rem;
-    bottom: -68rem;
-  }
+
   .app {
     bottom: -4rem;
     text-align: center;

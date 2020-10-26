@@ -165,14 +165,8 @@ a {
   margin-top: 2rem;
   text-align: center;
 }
-.contenido-principal .imagen-encuentra {
-  padding: 5rem 3rem 0 5rem;
-}
 .contenido-principal .imagen-encuentra:hover {
   transform: scale(1.1);
-}
-.contenido-principal .imagen-publica {
-  padding: 5rem 3rem 0 6rem;
 }
 .contenido-principal .imagen-publica:hover {
   transform: scale(1.1);
@@ -199,7 +193,7 @@ a {
 
 .carousel,
 .carousel-inner > .item > img {
-  width: 300px;
+  width: 310px;
 }
 
 .carousel {
@@ -235,24 +229,6 @@ a {
 .indigo {
   background-color: #cfcfd4;
 }
-.indigo .imagen-celular {
-  width: 10rem;
-  position: absolute;
-  left: 41rem;
-  margin-top: 4rem;
-}
-.indigo .imagen-download {
-  width: 10rem;
-  position: absolute;
-  left: 54rem;
-  margin-top: 4rem;
-}
-
-.descarga h3 {
-  position: absolute;
-  left: 45rem;
-  margin-top: 1rem;
-}
 
 .margen {
   margin-top: 5rem;
@@ -277,7 +253,7 @@ a {
 }
 
 /**BUSQUEDA**/
-.carousel, .carousel-inner > .item > img {
+.carousel-imagen {
   width: 255px !important;
 }
 
@@ -291,11 +267,11 @@ a {
 }
 
 .mapa {
-  position: absolute;
+  position: fixed;
   top: 10rem;
   right: 1rem;
   width: 692px;
-  height: 49 rem;
+  height: 28rem;
 }
 
 .card-title {
@@ -307,9 +283,10 @@ a {
 }
 
 /**MEDIAQUERIES**/
-@media only screen and (max-width: 590px) {
-  .imagen-principal {
-    width: 19rem;
+@media only screen and (min-width: 300px) and (max-width: 590px) {
+  .contenido-header .imagen-principal {
+    width: 24rem;
+    text-align: center;
   }
 
   .contenido-header {
@@ -318,33 +295,26 @@ a {
 
   .contenido-principal {
     flex-wrap: wrap;
+    margin: 0 auto;
   }
-
-  .imagen-encuentra {
+  .contenido-principal .imagen-publica-1 {
     padding: 0;
-    width: 19rem;
+    width: 15rem;
   }
-
-  .imagen-publica {
+  .contenido-principal .imagen-encuentra-1 {
     padding: 0;
-    width: 19rem;
-  }
-
-  .imagen-publica-1 {
-    width: 19rem;
-  }
-
-  .imagen-encuentra-1 {
-    width: 19rem;
+    width: 15rem;
   }
 
   .nosotros {
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
   }
 
   .nosotros img {
-    margin-left: 4rem;
+    margin: auto;
+    display: block;
   }
 
   .list-unstyled {
@@ -353,6 +323,10 @@ a {
 
   .enlace-arriba {
     bottom: 12rem;
+  }
+
+  .mapa {
+    display: none;
   }
 }
 @media only screen and (min-width: 591px) and (max-width: 767px) {
@@ -366,26 +340,16 @@ a {
     text-align: center;
   }
 
-  .imagen-encuentra {
-    padding: 0;
-    width: 19rem;
-  }
-
-  .imagen-publica {
-    padding: 0;
-    width: 19rem;
-  }
-
-  .imagen-publica-1 {
-    width: 19rem;
-  }
-
-  .imagen-encuentra-1 {
-    width: 19rem;
-  }
-
   .contenido-principal {
     text-align: center;
+  }
+  .contenido-principal .imagen-publica-1 {
+    padding: 0;
+    width: 15rem;
+  }
+  .contenido-principal .imagen-encuentra-1 {
+    padding: 0;
+    width: 15rem;
   }
 
   .nosotros img {
@@ -399,40 +363,24 @@ a {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  .imagen-principal {
-    width: 24rem;
+  .contenido-header .imagen-principal {
+    width: 22rem;
   }
 
   .contenido-principal {
     text-align: center;
   }
-
-  .imagen-encuentra {
+  .contenido-principal .imagen-publica-1 {
     padding: 0;
     width: 19rem;
   }
-
-  .imagen-publica {
+  .contenido-principal .imagen-encuentra-1 {
     padding: 0;
-    width: 19rem;
-  }
-
-  .imagen-publica-1 {
-    width: 19rem;
-  }
-
-  .imagen-encuentra-1 {
     width: 19rem;
   }
 
   .nosotros img {
     width: 169px;
-  }
-
-  .descarga {
-    position: absolute;
-    left: -26rem;
-    bottom: -68rem;
   }
 
   .app {
