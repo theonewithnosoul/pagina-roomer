@@ -332,6 +332,26 @@ a {
   .mapa {
     display: none;
   }
+
+  .card {
+    width: 16rem;
+  }
+  .card .card-body {
+    width: 16rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 590px) {
+  .alineacion {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 16rem;
+  }
+  .card .card-body {
+    width: 16rem;
+  }
 }
 @media only screen and (min-width: 591px) and (max-width: 767px) {
   .imagen-principal {
@@ -365,6 +385,10 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
   }
+
+  .mapa {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .contenido-header .imagen-principal {
@@ -391,6 +415,10 @@ a {
     bottom: -4rem;
     text-align: center;
     left: 49rem;
+  }
+
+  .mapa {
+    display: none;
   }
 }
 
