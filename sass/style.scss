@@ -143,13 +143,11 @@ a {
   margin-top: $margin-top-dos;
   @include text-align-center;
   .imagen-encuentra {
-    
     &:hover {
       @include tranform-scale;
     }
   }
   .imagen-publica {
-    
     &:hover {
       @include tranform-scale;
     }
@@ -257,11 +255,9 @@ a {
 .card-text {
   font-size: $Card-text-font-size;
 }
-.carousel-size{
+.carousel-size {
   width: 255px;
 }
-
-
 
 /**MEDIAQUERIES**/
 
@@ -269,35 +265,47 @@ a {
   .contenido-header {
     .imagen-principal {
       width: $imagen-principal-responsive-xs;
-      text-align: center;
+      display: block;
+      margin: auto;
     }
   }
-
+  .contenido-header .subtitulo {
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .titulo{
+    font-size: 1.8rem !important;
+  }
   .contenido-header {
     flex-wrap: wrap;
   }
   .contenido-principal {
     flex-wrap: wrap;
     margin: $margin-cero-auto;
+    margin-top: 3rem;
     .imagen-publica-1 {
       padding: 0;
       width: 15rem;
+      margin-bottom: 2rem;
+
     }
     .imagen-encuentra-1 {
       padding: 0;
       width: 15rem;
+      margin-bottom: 2rem;
     }
   }
 
   .nosotros {
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     margin: $margin-cero-auto;
   }
   .nosotros img {
-    margin: auto;
+    margin: 2rem auto 0;
     display: block;
-    
   }
   .list-unstyled {
     flex-wrap: wrap;
@@ -309,24 +317,28 @@ a {
   .mapa {
     display: none;
   }
-  .card{
+  .card {
     width: 16rem;
   
-    .card-body{
+    .card-body {
       width: 16rem;
     }
   }
- 
+
+  .alineacion {
+    display: block;
+    margin: 2rem 2rem;
+  }
 }
-@media only screen and (min-width: 450px) and (max-width: 590px){
-  .alineacion{
+@media only screen and (min-width: 450px) and (max-width: 590px) {
+  .alineacion {
     display: block;
     margin: 0 auto;
   }
-  .card{
+  .card {
     width: 16rem;
-  
-    .card-body{
+
+    .card-body {
       width: 16rem;
     }
   }
@@ -364,8 +376,10 @@ a {
   .mapa {
     display: none;
   }
-
-  
+}
+.row-size-md{
+  width: 37rem;
+  margin: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .contenido-header {
@@ -399,4 +413,8 @@ a {
     display: none;
   }
 }
-
+@media only screen and (min-width: 961px) and (max-width: 1299px){
+.mapa{
+  width: 474px;
+}
+}

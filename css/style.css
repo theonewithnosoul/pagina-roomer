@@ -289,8 +289,19 @@ a {
 /**MEDIAQUERIES**/
 @media only screen and (min-width: 300px) and (max-width: 590px) {
   .contenido-header .imagen-principal {
-    width: 24rem;
-    text-align: center;
+    width: 19rem;
+    display: block;
+    margin: auto;
+  }
+
+  .contenido-header .subtitulo {
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .titulo {
+    font-size: 1.8rem !important;
   }
 
   .contenido-header {
@@ -300,24 +311,28 @@ a {
   .contenido-principal {
     flex-wrap: wrap;
     margin: 0 auto;
+    margin-top: 3rem;
   }
   .contenido-principal .imagen-publica-1 {
     padding: 0;
     width: 15rem;
+    margin-bottom: 2rem;
   }
   .contenido-principal .imagen-encuentra-1 {
     padding: 0;
     width: 15rem;
+    margin-bottom: 2rem;
   }
 
   .nosotros {
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
   }
 
   .nosotros img {
-    margin: auto;
+    margin: 2rem auto 0;
     display: block;
   }
 
@@ -338,6 +353,11 @@ a {
   }
   .card .card-body {
     width: 16rem;
+  }
+
+  .alineacion {
+    display: block;
+    margin: 2rem 2rem;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 590px) {
@@ -390,6 +410,11 @@ a {
     display: none;
   }
 }
+.row-size-md {
+  width: 37rem;
+  margin: 0;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .contenido-header .imagen-principal {
     width: 22rem;
@@ -419,6 +444,11 @@ a {
 
   .mapa {
     display: none;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1299px) {
+  .mapa {
+    width: 474px;
   }
 }
 
