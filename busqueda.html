@@ -17,8 +17,8 @@
 
 <body>
     <header>
-        <!--NAVEGACION-->
-        <nav id="arriba" class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Navegación-->
+        <nav id="arriba" class="navbar navbar-expand-lg navbar-light bg-light navegacion-busqueda">
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="./IMAGES/iPhone 8 - 2.png" alt="logo">
             </a>
@@ -59,7 +59,9 @@
             </div>
         </nav>
     </header>
-    <!-- FIN NAVEGACION-->
+    <!-- Fin Navegación-->
+
+    <!--Segunda navegación-->
     <section class="container container-dos menu-navegacion ">
 
         <ul class="nav nav-tabs">
@@ -92,54 +94,98 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Presupuesto mensual</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <form>
+                        <div class="form-group">
+                            <label for="formControlRange">Precio Máximo</label>
+
+                            <p>$100</p>
+                            <input type="range" class="form-control-range" id="formControlRange">
+                            <p>+$1000</p>
+
+                        </div>
+                    </form>
+
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Disponibilidad</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item disponibilidad" href="#">Disponible actualmente</a>
+                  
+                   
+                    <label class="start" for="start">A partir de:</label>
+                    <input  class="date" type="date" id="start" name="trip-start" value="2020-11-5" min="2020-11-01"
+                        max="2021-12-31">
+
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Compañeros de piso</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Indiferente</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Mujer</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Hombre</a>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Mujer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Hombre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Indiferente
+                        </label>
+                    </div>
 
 
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Espacio publicado
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+                    aria-expanded="false">Tipo de piso</a>
+                <div class="dropdown-menu">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Habitación privada
+                        </label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                         Habitación compartida
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Apartamento entero
+                        </label>
+                    </div>
+
+
+                </div>
             </li>
-
-
-
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a
+                href="busqueda.html">Buscar</a></button>
         </ul>
     </section>
+    <!--Fin segunda barra de navegación-->
 
+
+    <!--Comienzo cards-->
     <main class="container container-dos">
         <div class="row row-2 row-size-md cols-2 alineacion">
             <div class="col-sm-6">
@@ -373,11 +419,11 @@
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <div id="carouselExampleIndicators-7" class="carousel slide carousel-size">
+                    <div id="carouselExampleIndicators-siete" class="carousel slide carousel-size">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators-7" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators-7" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators-7" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators-siete" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators-siete" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators-siete" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -390,12 +436,12 @@
                                 <img src="./IMAGES/bathroom7.jpg" class="d-block w-100 carousel-imagen" alt="bathroom7">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators-7" role="button"
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators-siete" role="button"
                             data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators-7" role="button"
+                        <a class="carousel-control-next" href="#carouselExampleIndicators-siete" role="button"
                             data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
@@ -411,11 +457,11 @@
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <div id="carouselExampleIndicators-8" class="carousel slide carousel-size">
+                    <div id="carouselExampleIndicators-ocho" class="carousel slide carousel-size">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators-8" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators-8" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators-8" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators-ocho" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators-ocho" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators-ocho" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -428,12 +474,12 @@
                                 <img src="./IMAGES/bathroom8.jpg" class="d-block w-100 carousel-imagen" alt="bathroom8">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators-8" role="button"
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators-ocho" role="button"
                             data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators-8" role="button"
+                        <a class="carousel-control-next" href="#carouselExampleIndicators-ocho" role="button"
                             data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
@@ -448,13 +494,14 @@
                 </div>
             </div>
         </div>
+        <!-- Fin cards-->
         <div class="col">
             <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40275.757954828165!2d2.1430467032310685!3d41.38465085872697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1603490507379!5m2!1ses-419!2sar"
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         </div>
-        
+
     </main>
 
 

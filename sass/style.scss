@@ -29,6 +29,24 @@ h4 {
 a {
   color: $color-principal;
 }
+/**Animaciones**/
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /**logo**/
 .logo {
   width: $logo-width;
@@ -199,9 +217,6 @@ a {
   margin-top: $margin-top-dos;
   img {
     width: $imagen-nosotros-width;
-    &:hover {
-      @include transform-scale-dos;
-    }
   }
 }
 
@@ -241,7 +256,10 @@ a {
 
 .container-dos {
   margin-right: 191px;
+  position: relative;
+  top: 8rem;
 }
+
 .mapa {
   position: fixed;
   top: 10rem;
@@ -258,7 +276,55 @@ a {
 .carousel-size {
   width: 255px;
 }
+.menu-navegacion {
+  position: fixed;
+  top: 4.5rem;
+  background-color: white;
 
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navegacion-busqueda {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  left: 0;
+  height: 4.5rem;
+}
+
+.form-group {
+  margin-left: 10px;
+
+  .form-control-range {
+    width: 80%;
+  }
+}
+.form-check{
+  margin: 0 10px;
+}
+
+label {
+  display: inline;
+  font: 1rem 'inter', sans-serif;
+  color: $color-principal;
+}
+
+.date,
+.start {
+  margin: 1rem 10px;
+  color: $color-principal;
+}
+.disponibilidad{
+  margin-bottom: 1rem;
+}
 /**MEDIAQUERIES**/
 
 @media only screen and (min-width: 300px) and (max-width: 590px) {
@@ -274,7 +340,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .titulo{
+  .titulo {
     font-size: 1.8rem !important;
   }
   .contenido-header {
@@ -288,7 +354,6 @@ a {
       padding: 0;
       width: 15rem;
       margin-bottom: 2rem;
-
     }
     .imagen-encuentra-1 {
       padding: 0;
@@ -311,7 +376,7 @@ a {
     flex-wrap: wrap;
   }
   .enlace-arriba {
-    bottom: 12rem;
+    bottom: 23rem;
   }
 
   .mapa {
@@ -319,7 +384,7 @@ a {
   }
   .card {
     width: 16rem;
-  
+
     .card-body {
       width: 16rem;
     }
@@ -345,7 +410,7 @@ a {
 }
 @media only screen and (min-width: 591px) and (max-width: 767px) {
   .imagen-principal {
-    width: 24rem;
+    width: 24rem !important;
   }
   .contenido-header {
     flex-wrap: wrap;
@@ -376,17 +441,25 @@ a {
   .mapa {
     display: none;
   }
+  .enlace-arriba {
+    bottom: 20rem;
+  }
+  .row-size-md {
+    width: 37rem;
+    margin: 0;
+  }
 }
-.row-size-md{
-  width: 37rem;
-  margin: 0;
-}
+
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .contenido-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     .imagen-principal {
-      width: 22rem;
+      width: 24rem;
     }
   }
+
   .contenido-principal {
     text-align: center;
 
@@ -412,9 +485,12 @@ a {
   .mapa {
     display: none;
   }
+  .enlace-arriba {
+    bottom: 18rem;
+  }
 }
-@media only screen and (min-width: 961px) and (max-width: 1299px){
-.mapa{
-  width: 474px;
-}
+@media only screen and (min-width: 961px) and (max-width: 1299px) {
+  .mapa {
+    width: 474px;
+  }
 }
