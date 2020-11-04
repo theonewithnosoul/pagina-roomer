@@ -14,6 +14,7 @@ h1 {
   font-size: $h1-font-size;
   font-weight: $h1-font-weight;
   color: $h1-color;
+  margin-top: $margin-top-dos;
 }
 h2 {
   font-size: $h2-font-size;
@@ -307,13 +308,13 @@ h1 {
     width: 80%;
   }
 }
-.form-check{
+.form-check {
   margin: 0 10px;
 }
 
 label {
   display: inline;
-  font: 1rem 'inter', sans-serif;
+  font: 1rem "inter", sans-serif;
   color: $color-principal;
 }
 
@@ -322,7 +323,7 @@ label {
   margin: 1rem 10px;
   color: $color-principal;
 }
-.disponibilidad{
+.disponibilidad {
   margin-bottom: 1rem;
 }
 /**MEDIAQUERIES**/
@@ -394,17 +395,19 @@ label {
     display: block;
     margin: 2rem 2rem;
   }
-  .navbar-mobile{
+  .navbar-mobile {
     background: white;
     padding: 1rem;
   }
-  .cards-habitaciones{
-    margin-top: 10rem;
+  .cards-habitaciones {
+    margin-top: -4rem;
   }
-.boton-enviar-busqueda{
-  margin-left: 1rem;
-}
-  
+  .boton-enviar-busqueda {
+    margin-left: 1rem;
+  }
+  .menu-navegacion{
+    position: relative;
+  }
 }
 @media only screen and (min-width: 450px) and (max-width: 590px) {
   .alineacion {
