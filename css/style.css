@@ -16,7 +16,7 @@ body {
 
 h1 {
   font-family: Montserrat, sans-serif;
-  font-size: 2.5em !important;
+  font-size: 2.5rem !important;
   font-weight: 800;
   color: #6c5ce7;
   margin-top: 2rem;
@@ -146,7 +146,7 @@ h1 {
   justify-content: space-between;
 }
 .contenido-header .subtitulo {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 4rem;
   color: #968bea;
 }
@@ -456,6 +456,15 @@ label {
   .card .card-body {
     width: 16rem;
   }
+
+  .menu-navegacion {
+    position: relative;
+  }
+
+  .navbar-mobile {
+    background: white;
+    padding: 1rem;
+  }
 }
 @media only screen and (min-width: 591px) and (max-width: 767px) {
   .imagen-principal {
@@ -502,15 +511,33 @@ label {
     width: 37rem;
     margin: 0;
   }
+
+  .menu-navegacion {
+    position: relative;
+  }
+
+  .navbar-mobile {
+    background: white;
+    padding: 1rem;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .contenido-header {
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+  }
+  .contenido-header .subtitulo {
+    font-size: 16px;
+    margin-top: 0;
   }
   .contenido-header .imagen-principal {
     width: 24rem;
+    margin-top: 32px;
+  }
+
+  .titulo {
+    font-size: 2rem !important;
   }
 
   .contenido-principal {
@@ -541,6 +568,24 @@ label {
 
   .enlace-arriba {
     bottom: 18rem;
+  }
+
+  .row-size-md {
+    width: 37rem;
+    margin: 0;
+  }
+
+  .alineacion {
+    margin: 0 auto;
+  }
+
+  .menu-navegacion {
+    position: relative;
+  }
+
+  .navbar-mobile {
+    background: white;
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 961px) and (max-width: 1299px) {
