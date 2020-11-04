@@ -425,6 +425,19 @@ label {
     display: block;
     margin: 2rem 2rem;
   }
+
+  .navbar-mobile {
+    background: white;
+    padding: 1rem;
+  }
+
+  .cards-habitaciones {
+    margin-top: 10rem;
+  }
+
+  .boton-enviar-busqueda {
+    margin-left: 1rem;
+  }
 }
 @media only screen and (min-width: 450px) and (max-width: 590px) {
   .alineacion {
