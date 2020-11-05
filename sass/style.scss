@@ -123,11 +123,15 @@ h1 {
 .show > .btn-outline-success.dropdown-toggle:focus {
   box-shadow: $btn-outline-success-disabled-box-shadow;
 }
-
+.margin-arriba{
+  margin-top: $margin-top-dos !important;
+  margin-left: 3rem !important;
+}
 /**contenido principal**/
 
 .contenido-header {
   @include flexbox-space-between;
+  margin: 0 auto;
   .subtitulo {
     font-size: $subtitulo-font-size;
     margin-top: $margin-top-cuatro;
@@ -327,6 +331,13 @@ label {
 .disponibilidad {
   margin-bottom: 1rem;
 }
+.profile-avatar img{
+  width: 2rem;
+}
+.profile-avatar{
+  width: 2rem;
+}
+
 /**MEDIAQUERIES**/
 
 @media only screen and (min-width: 300px) and (max-width: 590px) {

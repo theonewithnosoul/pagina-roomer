@@ -140,10 +140,16 @@ h1 {
   box-shadow: 0 0 0 0.2rem;
 }
 
+.margin-arriba {
+  margin-top: 2rem !important;
+  margin-left: 3rem !important;
+}
+
 /**contenido principal**/
 .contenido-header {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .contenido-header .subtitulo {
   font-size: 18px;
@@ -351,6 +357,14 @@ label {
 
 .disponibilidad {
   margin-bottom: 1rem;
+}
+
+.profile-avatar img {
+  width: 2rem;
+}
+
+.profile-avatar {
+  width: 2rem;
 }
 
 /**MEDIAQUERIES**/
