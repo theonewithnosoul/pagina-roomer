@@ -76,7 +76,51 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactanos">Contáctanos</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal"
+                            href="#contactanos">Contáctanos</a>
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1">Nombre completo</label>
+                                                <input type="name" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Nombre y apellido">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="name@example.com">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Escribenos lo que
+                                                    desees</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-outline-success my-2 my-sm-0"
+                                            data-dismiss="modal">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -187,6 +231,7 @@
                 <div class="copenhague col-md-3">
                     <img src="./IMAGES/Copenhague.png" alt=" Copenhague">
 
+
                 </div>
                 <div class="barcelona col-md-3">
                     <img src="./IMAGES/Barcelona.png" alt="barcelona">
@@ -279,7 +324,7 @@
 
                     <!-- Links -->
 
-                    <div id="contactanos">
+                    <div>
                         <h5>Write us!</h5>
                         <p>hello@roomerapp.com</p>
                     </div>
