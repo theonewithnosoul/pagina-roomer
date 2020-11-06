@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**body**/
 /** fin body**/
 /** h1 **/
@@ -367,6 +368,58 @@ label {
   width: 2rem;
 }
 
+/**Inicio de sesion y registro**/
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+  width: 217px;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+  width: 217px;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+.tamaño {
+  width: 18rem;
+}
+
+.tamaño-container {
+  width: 20rem;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
 /**MEDIAQUERIES**/
 @media only screen and (min-width: 300px) and (max-width: 590px) {
   .contenido-header .imagen-principal {

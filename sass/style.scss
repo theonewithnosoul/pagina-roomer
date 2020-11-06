@@ -123,7 +123,7 @@ h1 {
 .show > .btn-outline-success.dropdown-toggle:focus {
   box-shadow: $btn-outline-success-disabled-box-shadow;
 }
-.margin-arriba{
+.margin-arriba {
   margin-top: $margin-top-dos !important;
   margin-left: 3rem !important;
 }
@@ -303,7 +303,6 @@ h1 {
   right: 0;
   left: 0;
   height: 4.5rem;
-  
 }
 
 .form-group {
@@ -331,11 +330,62 @@ label {
 .disponibilidad {
   margin-bottom: 1rem;
 }
-.profile-avatar img{
+.profile-avatar img {
   width: 2rem;
 }
-.profile-avatar{
+.profile-avatar {
   width: 2rem;
+}
+
+/**Inicio de sesion y registro**/
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+  width: 217px;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+  width: 217px;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+.tamaño {
+  width: 18rem;
+}
+.tamaño-container {
+  width: 20rem;
+}
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
 }
 
 /**MEDIAQUERIES**/
@@ -417,7 +467,7 @@ label {
   .boton-enviar-busqueda {
     margin-left: 1rem;
   }
-  .menu-navegacion{
+  .menu-navegacion {
     position: relative;
   }
 }
@@ -433,7 +483,7 @@ label {
       width: 16rem;
     }
   }
-  .menu-navegacion{
+  .menu-navegacion {
     position: relative;
   }
   .navbar-mobile {
@@ -481,7 +531,7 @@ label {
     width: 37rem;
     margin: 0;
   }
-  .menu-navegacion{
+  .menu-navegacion {
     position: relative;
   }
   .navbar-mobile {
@@ -495,7 +545,7 @@ label {
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
-    .subtitulo{
+    .subtitulo {
       font-size: 16px;
       margin-top: 53px;
     }
@@ -503,11 +553,10 @@ label {
       width: 24rem;
       margin-top: 32px;
     }
-    
   }
-.titulo{
-  font-size: 2rem !important;
-}
+  .titulo {
+    font-size: 2rem !important;
+  }
   .contenido-principal {
     text-align: center;
 
@@ -540,10 +589,10 @@ label {
     width: 37rem;
     margin: 0;
   }
-  .alineacion{
+  .alineacion {
     margin: 0 auto;
   }
-  .menu-navegacion{
+  .menu-navegacion {
     position: relative;
   }
   .navbar-mobile {
