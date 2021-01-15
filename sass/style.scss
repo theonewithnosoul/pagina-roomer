@@ -124,8 +124,11 @@ h1 {
   box-shadow: $btn-outline-success-disabled-box-shadow;
 }
 .margin-arriba {
-  margin-top: $margin-top-dos !important;
-  margin-left: 5rem !important;
+  margin-top: 1rem !important;
+  margin-left: 2.5rem !important;
+}
+.item-inicio{
+  margin-left: -11px
 }
 /**contenido principal**/
 
@@ -329,6 +332,7 @@ label {
 }
 .disponibilidad {
   margin-bottom: 1rem;
+  margin-left: -13px;
 }
 .profile-avatar img {
   width: 2rem;
@@ -336,7 +340,10 @@ label {
 .profile-avatar {
   width: 2rem;
 }
-
+.boton-busqueda{
+  width: 5.5rem;
+  height: 2.5rem;
+}
 /**Inicio de sesion y registro**/
 :root {
   --input-padding-x: 1.5rem;
