@@ -20,7 +20,7 @@ h1 {
   font-size: 2.5rem !important;
   font-weight: 800;
   color: #6c5ce7;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 h2 {
@@ -142,8 +142,12 @@ h1 {
 }
 
 .margin-arriba {
-  margin-top: 2rem !important;
-  margin-left: 5rem !important;
+  margin-top: 1rem !important;
+  margin-left: 2.5rem !important;
+}
+
+.item-inicio {
+  margin-left: -11px;
 }
 
 /**contenido principal**/
@@ -186,7 +190,7 @@ h1 {
 .contenido-principal {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 6rem;
   text-align: center;
 }
 .contenido-principal .imagen-encuentra:hover {
@@ -212,7 +216,7 @@ h1 {
 }
 .ciudades img {
   width: 200px;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .carousel,
@@ -240,7 +244,7 @@ h1 {
 .nosotros {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 .nosotros img {
   width: 200px;
@@ -280,13 +284,17 @@ h1 {
 
 .row-2 {
   width: 52%;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .container-dos {
   margin-right: 191px;
   position: relative;
   top: 8rem;
+}
+
+.arreglo {
+  top: 4rem;
 }
 
 .mapa {
